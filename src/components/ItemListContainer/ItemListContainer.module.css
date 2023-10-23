@@ -1,0 +1,14 @@
+.contenedorMensaje {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(241, 241, 131);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+}
