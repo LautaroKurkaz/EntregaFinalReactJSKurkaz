@@ -1,0 +1,23 @@
+.card {
+    border: 2px solid black;
+    margin: 10px;
+    width: 350px;
+    height: 400px;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.botonDetalle {
+    background-color: #1f72d8;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

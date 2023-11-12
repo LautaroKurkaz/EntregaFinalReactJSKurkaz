@@ -1,17 +1,24 @@
+import Card from "../Card/Card"
 import CartWidget from "../CartWidget/CartWidget"
+import { products } from "../asyncMock"
 import styles from "./NavBar.module.css"
+import { Link } from "react-router-dom"
+
+
 
 const NavBar = () => {
   return (
-    <div className={`${styles.contenedor}`}>
+    <div className={`${styles.container}`}>
       <div>
-        <h1>MI TIENDA</h1>
+        <Link to={"/"}>
+          <h1>TIENDA BRANDSEN</h1>
+        </Link>
       </div> 
-      <div style={{marginTop:"30px"}}>
-        <a href="">Categoria 1</a>
-        <a href="">Categoria 2</a>
-        <a href="">Categoria 3</a>
-        <a href="">Categoria 4</a>
+      <div style={{marginTop:"60px"}}>
+        <Link to="/category/baño"><button className={`${styles.categoryButton}`}>Baño</button></Link>
+        <Link to="/category/dormitorio"><button className={`${styles.categoryButton}`}>Dormitorio</button></Link>
+        <Link to="/category/cocina"><button className={`${styles.categoryButton}`}>Cocina</button></Link>
+        <Link to="/category/deco"><button className={`${styles.categoryButton}`}>Deco</button></Link>
       </div>
       <div>
         <CartWidget />
