@@ -1,33 +1,15 @@
 import { useParams } from "react-router-dom"
-import MapProducts from "../MapProducts/MapProducts"
 import styles from "./ItemListContainer.module.css"
-import React, { useEffect, useState } from 'react';
-
-import { getProducts } from "../asyncMock"
-
+import React, { useContext, useEffect, useState } from 'react';
+import { Item, ItemDetailContainer } from "..";
+import ProductsContext from "../../context/ProductsContext";
 
 export const ItemListContainer = () => {
-  
-  const { category } = useParams()
+  const { products } = useContext(ProductsContext);
 
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    getProducts()
-      .then((resp) => {
-        if(category) {
-          const productsFilter = resp.filter(product => product.category === category);
-          setProducts(productsFilter);
-        } else {
-          setProducts(resp);
-        }
-      })
-      .catch((error) => console.log(error));
-  }, [category]);
-  
   return (
     <div className={`${styles.contenedorCatalogo}`}>
-      <MapProducts productos={products}/>
+      {products.map ( product => <Item id={product.id} key={product.id} name={product.name} price={product.price} img={product.img} category={product.category}/>)}
     </div>
   )
 }

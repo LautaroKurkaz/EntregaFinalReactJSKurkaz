@@ -1,8 +1,17 @@
-# React + Vite
+# Proyecto Final React Js Coderhouse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción del proyecto
+Mi proyecto se trata de un e-commerce de artículos de bazar y hogar.
 
-Currently, two official plugins are available:
+## Tecnologías
+- Vite
+- React Js Vanilla
+- React Router Dom
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Librerías
+- Sweet Alert: Esta librería se utilizó para generar una alerta más agradable a la vista al momento de finalizar una compra.
+
+## Instalación
+- git clone "https://github.com/LautaroKurkaz/EntregaFinalReactJSKurkaz"
+- npm install
+- npm run dev
